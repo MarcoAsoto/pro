@@ -1,0 +1,63 @@
+@media screen and (max-width:991px) {
+    .port, .portiz{
+        p{
+            display: none;
+        }
+        .port__portada{
+            grid-template-columns: 100%;
+            grid-template-rows: min-content, min-content, min-content;
+            grid-template-areas: 
+            "tittle"
+            "img"
+            "button";
+            .port-button{
+                margin: 4px 0;
+            }
+        }
+        .play{
+            img{
+                width: 80%;
+            }
+        }
+    }
+    .ingreso{
+        border-radius: 15rem;
+    }
+    .det{
+        .details, .detailsp{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+@media screen and (max-width:650px) {
+    .port, .portiz{
+        .portiz__portada{
+            flex-direction: column;
+            .portiz-picture{
+                width: 98%;
+            }
+        }
+        .portiz__portada1{
+            flex-direction: column;
+            .portiz-picture{
+                width: 98%;
+            }
+        }
+        .play{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .ingreso{
+        border-radius: 10rem;
+    }
+    .det{
+        .details, .detailsp{
+            img{
+                width: 80%;
+            }
+        }
+    }
+}

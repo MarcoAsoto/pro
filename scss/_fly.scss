@@ -1,0 +1,104 @@
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/*¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨*/
+/*                      Diseño de página luxury               */
+/*"""""" diseño de la pagina de aviones básicos (comer) """"""*/
+/*-----------------diseño de la pagina aviones----------------*/
+/*............................................................*/
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.tag{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    .tags{
+        background-color: #0061d0;
+        width: 20rem;
+        padding: .8rem;
+        margin: 1rem;
+        border-radius: 15px;
+        .tags-desc{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .tags-price{
+            display: flex;
+            justify-content: space-between;
+            color: $color-text;
+            a{
+                text-decoration: none;
+                background-color: #000000;
+                border-radius: 9px;
+                color: #ffffff;
+                padding: .3rem;
+                &:hover{
+                    color: #000000b5;
+                    background-color: #ffffff;
+                    border-radius: 9px;
+                }
+            }
+        }
+    }
+} 
+.det{
+    .details{
+        display: flex;
+        margin: 2rem;
+        justify-content: center;
+        .det-text{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-evenly;
+            font-size: 30px;
+            margin-bottom: 2rem;
+            text-align: center;
+            h3{
+                background-color: #0877d2f1;
+                border-radius: 4px;
+                color: #ffffff;
+            }
+            p{
+                padding: 1%;
+                span{
+                    color: $color-text;
+                }
+            }
+        }
+        img{
+            width: 50%;
+            border-radius: 20px;
+        }
+    }
+    .detailsp{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin: 2rem;
+        .det-text{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: space-evenly;
+            font-size: 30px;
+            margin-bottom: 3rem;
+            text-align: center;
+            h3{
+                background-color: #0877d2f1;
+                border-radius: 4px;
+                color: #ffffff;
+            }
+            p{
+                padding: 1%;
+                span{
+                    color: $color-text;
+                }
+            }
+        }
+        img {
+            width: 50%;
+            border-radius: 20px;
+        }
+    }
+}

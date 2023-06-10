@@ -1,0 +1,630 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Diphylleia&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.global { /*clase dada al body para ponerle una imagen de fondo*/
+  background-image: url(../assets/fondo.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.logo {
+  display: block;
+  width: 12rem;
+}
+
+/*diseño de index*/ /*---------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------*/
+/*--------------------------------pagina diseño de index----------------------------*/
+/*---------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------*/
+.first { /*encabezado principal*/
+  font-family: "Diphylleia", serif;
+  background: radial-gradient(circle, white 10%, rgba(255, 0, 0, 0) 90%);
+  padding: 1%;
+  margin: 0 15%;
+  border-radius: 100%;
+  text-align: center;
+  color: #0845d2;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.first:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.port { /*primera vista de los usuarios al entrar a la pagina*/
+  margin: 3rem 1rem;
+}
+.port .port__portada { /*tarjeta de presentación y direccionamiento a aviones de la pagina*/
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
+  grid-template-rows: min-content min-content min-content;
+  grid-template-areas: "img tittle" "img description" "img button";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+.port .port__portada .port-tittle {
+  grid-area: tittle;
+}
+.port .port__portada .port-description {
+  grid-area: description;
+  font-size: 21px;
+  text-align: center;
+}
+.port .port__portada .port-description span {
+  font-weight: bold;
+  color: #b8860b;
+}
+.port .port__portada .port-button {
+  grid-area: button;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(193, 34, 34, 0.0941176471);
+          box-shadow: 2px 2px 2px 1px rgba(193, 34, 34, 0.0941176471);
+  background-color: #3dc6db; /*poner una variable para estos background y hover por que así será mas rapido y facil entyregar mi codigo*/
+  border-radius: 20px;
+  border: none;
+  padding: 0.6rem;
+}
+.port .port__portada .port-button:hover {
+  background-color: #80dfee;
+}
+.port .port__portada .port-button a {
+  text-decoration: none;
+  color: #000000;
+}
+.port .port__portada .port-avnta {
+  grid-area: img;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.portiz { /*ejempplo co imagen productos de venta*/
+  margin: 6rem;
+}
+.portiz .portiz__portada { /*direccionamiento a pagina de venta de aviones básicos*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3rem 0;
+}
+.portiz .portiz__portada div {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem;
+}
+.portiz .portiz__portada div .portiz-description {
+  font-size: 19px;
+}
+.portiz .portiz__portada div p span {
+  background-color: #b8860b;
+  padding: 1px;
+  border-radius: 6px;
+  color: #ffffff;
+}
+.portiz .portiz__portada div .portiz-button {
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2078431373);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2078431373);
+  background-color: #3dc6db; /*poner una variable para estos background y hover por que así será mas rapido y facil entregar mi codigo*/
+  border-radius: 20px;
+  border: none;
+  padding: 0.6rem;
+  margin: 1rem;
+}
+.portiz .portiz__portada div .portiz-button:hover {
+  background-color: #80dfee;
+}
+.portiz .portiz__portada div .portiz-button a {
+  text-decoration: none;
+  color: #000000;
+}
+.portiz .portiz__portada .portiz-picture {
+  width: 75%;
+}
+.portiz .portiz__portada1 { /*presentación de Jet y direccionamiento a la pagina de luxury*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3rem 0;
+}
+.portiz .portiz__portada1 div {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem;
+}
+.portiz .portiz__portada1 div .portiz-description {
+  font-size: 19px;
+}
+.portiz .portiz__portada1 div p span {
+  background-color: #b8860b;
+  padding: 1px;
+  border-radius: 6px;
+  color: #ffffff;
+}
+.portiz .portiz__portada1 div .portiz-button {
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2078431373);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2078431373);
+  background-color: #3dc6db; /*poner una variable para estos background y hover por que así será mas rapido y facil entregar mi codigo*/
+  border-radius: 20px;
+  border: none;
+  padding: 0.6rem;
+  margin: 1rem;
+}
+.portiz .portiz__portada1 div .portiz-button:hover {
+  background-color: #80dfee;
+}
+.portiz .portiz__portada1 div .portiz-button a {
+  text-decoration: none;
+  color: #000000;
+}
+.portiz .portiz__portada1 .portiz-picture {
+  width: 75%;
+}
+.portiz .line { /*linea de texto con invitación al usuario para que nos contactemos con él*/
+  text-align: end;
+  padding: 2rem 0;
+  margin: 2rem 0;
+}
+.portiz .line h4 {
+  color: #b8860b;
+  font-size: 28px;
+}
+.portiz .line h4 a {
+  text-decoration: none;
+}
+.portiz .play { /*invitación al usuario para que inicie seción en nuestra pagina*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 251, 0, 0.156);
+  border-radius: 50px;
+}
+.portiz .play .play__tittle {
+  background-color: rgba(8, 119, 210, 0.9450980392);
+  border-radius: 4px;
+  color: #ffffff;
+}
+.portiz .play .play__description {
+  text-align: center;
+  font-size: 21px;
+}
+.portiz .play .play__description span:hover {
+  color: #0845d2;
+}
+.portiz .play .play__button {
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2078431373);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2078431373);
+  background-color: #3dc6db; /*poner una variable para estos background y hover por que así será mas rapido y facil entregar mi codigo*/
+  border-radius: 20px;
+  border: none;
+  padding: 0.6rem;
+  margin: 1rem;
+}
+.portiz .play .play__button:hover {
+  background-color: #80dfee;
+}
+.portiz .play .play__button a {
+  text-decoration: none;
+  color: #000000;
+}
+.portiz .play img {
+  width: 59%;
+}
+
+.subtittle { /*cuadro de separación en la página para mas prolijidad*/
+  text-align: center;
+  color: #ffffff;
+  background: rgb(2, 0, 36);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(2, 0, 36, 0.7777311608)), color-stop(35%, rgb(42, 42, 162)), to(rgb(0, 212, 255)));
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.7777311608) 0%, rgb(42, 42, 162) 35%, rgb(0, 212, 255) 100%);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+/*diseño pagina de contacto y de inicio*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*--------------------diseño a pagina de contacto y pagina de inicio----------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.ingreso {
+  text-align: center;
+  margin-bottom: 15rem;
+  background: radial-gradient(circle, rgba(53, 154, 231, 0.8352941176) 0%, rgba(247, 182, 244, 0.1294117647) 100%);
+  border-top: rgba(255, 255, 255, 0.4392156863) 0.1px solid;
+  border-radius: 20rem;
+}
+.ingreso label {
+  width: 90%;
+  font-size: 23px;
+  margin: 1rem auto;
+}
+.ingreso div {
+  width: 90%;
+  font-size: 25px;
+  margin: 2rem auto;
+}
+.ingreso button {
+  background-color: #374cd2;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem;
+}
+.ingreso button a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.ingreso .desc {
+  padding: 2rem;
+}
+.ingreso .desc a {
+  color: #374cd2;
+  text-decoration: none;
+}
+.ingreso .desc2 {
+  padding: 1rem;
+}
+.ingreso .desc2 span {
+  color: #374cd2;
+}
+
+/*diseño paginas de fly*/
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/*¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨*/
+/*                      Diseño de página luxury               */
+/*"""""" diseño de la pagina de aviones básicos (comer) """"""*/
+/*-----------------diseño de la pagina aviones----------------*/
+/*............................................................*/
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.tag .tags {
+  background-color: #0061d0;
+  width: 20rem;
+  padding: 0.8rem;
+  margin: 1rem;
+  border-radius: 15px;
+}
+.tag .tags .tags-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.tag .tags .tags-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #b8860b;
+}
+.tag .tags .tags-price a {
+  text-decoration: none;
+  background-color: #000000;
+  border-radius: 9px;
+  color: #ffffff;
+  padding: 0.3rem;
+}
+.tag .tags .tags-price a:hover {
+  color: rgba(0, 0, 0, 0.7098039216);
+  background-color: #ffffff;
+  border-radius: 9px;
+}
+
+.det .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.det .details .det-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 30px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.det .details .det-text h3 {
+  background-color: rgba(8, 119, 210, 0.9450980392);
+  border-radius: 4px;
+  color: #ffffff;
+}
+.det .details .det-text p {
+  padding: 1%;
+}
+.det .details .det-text p span {
+  color: #b8860b;
+}
+.det .details img {
+  width: 50%;
+  border-radius: 20px;
+}
+.det .detailsp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem;
+}
+.det .detailsp .det-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 30px;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.det .detailsp .det-text h3 {
+  background-color: rgba(8, 119, 210, 0.9450980392);
+  border-radius: 4px;
+  color: #ffffff;
+}
+.det .detailsp .det-text p {
+  padding: 1%;
+}
+.det .detailsp .det-text p span {
+  color: #b8860b;
+}
+.det .detailsp img {
+  width: 50%;
+  border-radius: 20px;
+}
+
+footer {
+  background-color: rgba(31, 59, 220, 0.8392156863);
+  margin: 1rem 0 0 0;
+}
+footer .foter {
+  color: #000000;
+  padding: 2.9rem;
+}
+footer .ultimate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 4rem;
+}
+footer .ultimate .social {
+  width: 4rem;
+  margin: 1.5rem auto;
+}
+footer .ultimate .social a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.631372549);
+  text-align: center;
+}
+footer .ultimate .social a:hover {
+  color: #000000;
+}
+
+@media screen and (max-width: 991px) {
+  .port p, .portiz p {
+    display: none;
+  }
+  .port .port__portada, .portiz .port__portada {
+    grid-template-columns: 100%;
+    grid-template-rows: -webkit-min-content, -webkit-min-content, -webkit-min-content;
+    grid-template-rows: min-content, min-content, min-content;
+    grid-template-areas: "tittle" "img" "button";
+  }
+  .port .port__portada .port-button, .portiz .port__portada .port-button {
+    margin: 4px 0;
+  }
+  .port .play img, .portiz .play img {
+    width: 80%;
+  }
+  .ingreso {
+    border-radius: 15rem;
+  }
+  .det .details, .det .detailsp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (max-width: 650px) {
+  .port .portiz__portada, .portiz .portiz__portada {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .port .portiz__portada .portiz-picture, .portiz .portiz__portada .portiz-picture {
+    width: 98%;
+  }
+  .port .portiz__portada1, .portiz .portiz__portada1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .port .portiz__portada1 .portiz-picture, .portiz .portiz__portada1 .portiz-picture {
+    width: 98%;
+  }
+  .port .play img, .portiz .play img {
+    width: 100%;
+  }
+  .ingreso {
+    border-radius: 10rem;
+  }
+  .det .details img, .det .detailsp img {
+    width: 80%;
+  }
+}
+.error {
+  font-family: "Diphylleia", serif;
+  text-align: center;
+  font-size: 25px;
+  margin: 3rem;
+}
+.error a {
+  background-color: rgba(0, 0, 0, 0);
+  display: inline-block;
+  text-decoration: none;
+  color: #053bff;
+  font-size: 30px;
+}
+.error a:hover {
+  -webkit-animation-name: giro;
+          animation-name: giro;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+@-webkit-keyframes giro {
+  0% {
+    color: rgb(0, 255, 255);
+  }
+  25% {
+    color: #009dff;
+    -webkit-transform: rotate(80deg);
+            transform: rotate(80deg);
+  }
+  75% {
+    color: #2b00ff;
+    -webkit-transform: rotate(290deg);
+            transform: rotate(290deg);
+  }
+  100% {
+    color: #ae00ff;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes giro {
+  0% {
+    color: rgb(0, 255, 255);
+  }
+  25% {
+    color: #009dff;
+    -webkit-transform: rotate(80deg);
+            transform: rotate(80deg);
+  }
+  75% {
+    color: #2b00ff;
+    -webkit-transform: rotate(290deg);
+            transform: rotate(290deg);
+  }
+  100% {
+    color: #ae00ff;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.error img {
+  width: 48%;
+}

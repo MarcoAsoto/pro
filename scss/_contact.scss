@@ -1,0 +1,46 @@
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*--------------------diseño a pagina de contacto y pagina de inicio----------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.ingreso{
+    text-align: center;
+    margin-bottom: 15rem;
+    background: radial-gradient(circle, #359ae7d5 0%, #f7b6f421 100%);
+    border-top: #ffffff70 .1px solid;
+    border-radius: 20rem;
+    label{
+        width: 90%;
+        font-size: 23px;
+        margin: 1rem auto;
+    }
+    div{
+        width: 90%;
+        font-size: 25px;
+        margin: 2rem auto;
+    }
+    button{
+        background-color: #374cd2;
+        border: none;
+        border-radius: 5px;
+        padding: .8rem;
+        a{
+            font-size: 20px;
+            text-decoration: none;
+            color: #ffffff;
+        }
+    }
+    .desc{
+        padding: 2rem;
+        a{
+            color: #374cd2;
+            text-decoration: none;
+        }
+    }
+    .desc2{
+        padding: 1rem;
+        span{
+            color: #374cd2;
+        }
+    }
+}

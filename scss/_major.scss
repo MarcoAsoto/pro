@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.global{ /*clase dada al body para ponerle una imagen de fondo*/
+    background-image: url(../assets/fondo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+img{
+    width: 100%;
+}
