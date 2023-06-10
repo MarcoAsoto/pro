@@ -560,7 +560,7 @@ footer .ultimate .social a:hover {
     width: 100%;
   }
   .ingreso {
-    border-radius: 5px;
+    border-radius: none;
   }
   .det .details img, .det .detailsp img {
     width: 80%;
