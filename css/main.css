@@ -508,64 +508,6 @@ footer .ultimate .social a:hover {
   color: #000000;
 }
 
-@media screen and (max-width: 991px) {
-  .port p, .portiz p {
-    display: none;
-  }
-  .port .port__portada, .portiz .port__portada {
-    grid-template-columns: 100%;
-    grid-template-rows: -webkit-min-content, -webkit-min-content, -webkit-min-content;
-    grid-template-rows: min-content, min-content, min-content;
-    grid-template-areas: "tittle" "img" "button";
-  }
-  .port .port__portada .port-button, .portiz .port__portada .port-button {
-    margin: 4px 0;
-  }
-  .port .play img, .portiz .play img {
-    width: 80%;
-  }
-  .ingreso {
-    border-radius: 15rem;
-  }
-  .det .details, .det .detailsp {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-@media screen and (max-width: 650px) {
-  .port .portiz__portada, .portiz .portiz__portada {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .port .portiz__portada .portiz-picture, .portiz .portiz__portada .portiz-picture {
-    width: 98%;
-  }
-  .port .portiz__portada1, .portiz .portiz__portada1 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .port .portiz__portada1 .portiz-picture, .portiz .portiz__portada1 .portiz-picture {
-    width: 98%;
-  }
-  .port .play img, .portiz .play img {
-    width: 100%;
-  }
-  .ingreso {
-    border-radius: none;
-  }
-  .det .details img, .det .detailsp img {
-    width: 80%;
-  }
-}
 .error {
   font-family: "Diphylleia", serif;
   text-align: center;
@@ -627,4 +569,63 @@ footer .ultimate .social a:hover {
 }
 .error img {
   width: 48%;
+}
+
+@media screen and (max-width: 991px) {
+  .port p, .portiz p {
+    display: none;
+  }
+  .port .port__portada, .portiz .port__portada {
+    grid-template-columns: 100%;
+    grid-template-rows: -webkit-min-content, -webkit-min-content, -webkit-min-content;
+    grid-template-rows: min-content, min-content, min-content;
+    grid-template-areas: "tittle" "img" "button";
+  }
+  .port .port__portada .port-button, .portiz .port__portada .port-button {
+    margin: 4px 0;
+  }
+  .port .play img, .portiz .play img {
+    width: 80%;
+  }
+  .ingreso {
+    border-radius: 15rem;
+  }
+  .det .details, .det .detailsp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (max-width: 650px) {
+  .port .portiz__portada, .portiz .portiz__portada {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .port .portiz__portada .portiz-picture, .portiz .portiz__portada .portiz-picture {
+    width: 98%;
+  }
+  .port .portiz__portada1, .portiz .portiz__portada1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .port .portiz__portada1 .portiz-picture, .portiz .portiz__portada1 .portiz-picture {
+    width: 98%;
+  }
+  .port .play img, .portiz .play img {
+    width: 100%;
+  }
+  .ingreso {
+    border-radius: 4rem;
+  }
+  .det .details img, .det .detailsp img {
+    width: 80%;
+  }
 }
