@@ -601,25 +601,28 @@ footer .ultimate .social a:hover {
   }
 }
 @media screen and (max-width: 650px) {
-  .port .portiz__portada, .portiz .portiz__portada {
+  .portiz {
+    margin: 0.3rem;
+  }
+  .portiz .portiz__portada {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .port .portiz__portada .portiz-picture, .portiz .portiz__portada .portiz-picture {
+  .portiz .portiz__portada .portiz-picture {
     width: 98%;
   }
-  .port .portiz__portada1, .portiz .portiz__portada1 {
+  .portiz .portiz__portada1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .port .portiz__portada1 .portiz-picture, .portiz .portiz__portada1 .portiz-picture {
+  .portiz .portiz__portada1 .portiz-picture {
     width: 98%;
   }
-  .port .play img, .portiz .play img {
+  .portiz .play img {
     width: 100%;
   }
   .ingreso {

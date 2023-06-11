@@ -31,7 +31,8 @@
     }
 }
 @media screen and (max-width:650px) {
-    .port, .portiz{
+    .portiz{
+        margin: .3rem;
         .portiz__portada{
             flex-direction: column;
             .portiz-picture{
