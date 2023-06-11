@@ -602,7 +602,7 @@ footer .ultimate .social a:hover {
 }
 @media screen and (max-width: 650px) {
   .port .port__portada .port-tittle {
-    margin: 1rem 0;
+    margin: 2rem 0;
   }
   .port .port__portada .port-button {
     padding: 1rem;
