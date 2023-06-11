@@ -581,12 +581,8 @@ footer .ultimate .social a:hover {
     grid-template-rows: min-content, min-content, min-content;
     grid-template-areas: "tittle" "img" "button";
   }
-  .port .port__portada .port-tittle, .portiz .port__portada .port-tittle {
-    margin: 1rem 0;
-  }
   .port .port__portada .port-button, .portiz .port__portada .port-button {
-    padding: 1rem;
-    margin: 3rem 0;
+    margin: 4px 0;
   }
   .port .play img, .portiz .play img {
     width: 80%;
@@ -605,6 +601,13 @@ footer .ultimate .social a:hover {
   }
 }
 @media screen and (max-width: 650px) {
+  .port .port__portada .port-tittle {
+    margin: 1rem 0;
+  }
+  .port .port__portada .port-button {
+    padding: 1rem;
+    margin: 3rem 0;
+  }
   .portiz {
     margin: 0.3rem;
   }

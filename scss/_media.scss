@@ -10,12 +10,8 @@
             "tittle"
             "img"
             "button";
-            .port-tittle{
-                margin: 1rem 0;
-            }
             .port-button{
-                padding: 1rem;
-                margin: 3rem 0;
+                margin: 4px 0;
             }
         }
         .play{
@@ -35,6 +31,17 @@
     }
 }
 @media screen and (max-width:650px) {
+    .port{
+        .port__portada{
+            .port-tittle{
+                margin: 1rem 0;
+            }
+            .port-button{
+                padding: 1rem;
+                margin: 3rem 0;
+            }
+        }
+    }
     .portiz{
         margin: .3rem;
         .portiz__portada{
