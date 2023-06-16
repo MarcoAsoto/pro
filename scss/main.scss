@@ -1,7 +1,7 @@
-@import "_variables.scss";
-@import "_major.scss";
-@import "_header.scss";
-@import "_main.scss";
-@import "_footer.scss";
-@import "_404.scss";
-@import "_media.scss";
+@import "_variables.scss"; /*variables de la pagina*/
+@import "_major.scss";/*engloba las etiquetas que se usan para todo el sitio*/
+@import "_header.scss";/*le dí un poco de estilo a la barra de navegación*/
+@import "_main.scss";/*Es todo lo que se puede ver en producto principal de la página*/
+@import "_footer.scss";/*Esto es el pie de página*/
+@import "_404.scss";/*página de error*/
+@import "_media.scss";/*aquí puse todo mi diseño responsive*/

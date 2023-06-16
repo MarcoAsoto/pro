@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*variables de la pagina*/
 @import url("https://fonts.googleapis.com/css2?family=Diphylleia&display=swap");
 * {
   padding: 0;
@@ -15,11 +16,12 @@ img {
   width: 100%;
 }
 
-.logo {
+/*engloba las etiquetas que se usan para todo el sitio*/
+.logo { /*esto es lo único que le toque a boostrap*/
   display: block;
   width: 12rem;
-}
-
+} /*imagen de logo de mi página*/
+/*le dí un poco de estilo a la barra de navegación*/
 /*diseño de index*/ /*---------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------*/
 /*--------------------------------pagina diseño de index----------------------------*/
@@ -71,7 +73,7 @@ img {
   grid-area: button;
   -webkit-box-shadow: 2px 2px 2px 1px rgba(193, 34, 34, 0.0941176471);
           box-shadow: 2px 2px 2px 1px rgba(193, 34, 34, 0.0941176471);
-  background-color: #3dc6db; /*poner una variable para estos background y hover por que así será mas rapido y facil entyregar mi codigo*/
+  background-color: #3dc6db;
   border-radius: 20px;
   border: none;
   padding: 0.6rem;
@@ -132,7 +134,7 @@ img {
 .portiz .portiz__portada div .portiz-button {
   -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2078431373);
           box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2078431373);
-  background-color: #3dc6db; /*poner una variable para estos background y hover por que así será mas rapido y facil entregar mi codigo*/
+  background-color: #3dc6db;
   border-radius: 20px;
   border: none;
   padding: 0.6rem;
@@ -192,7 +194,7 @@ img {
 .portiz .portiz__portada1 div .portiz-button {
   -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2078431373);
           box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2078431373);
-  background-color: #3dc6db; /*poner una variable para estos background y hover por que así será mas rapido y facil entregar mi codigo*/
+  background-color: #3dc6db;
   border-radius: 20px;
   border: none;
   padding: 0.6rem;
@@ -282,12 +284,13 @@ img {
 /*--------------------diseño a pagina de contacto y pagina de inicio----------------*/
 /*----------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.ingreso {
+.ingreso { /*diseño de las etiquetas de ingreso inicio y contacto*/
   text-align: center;
   margin-bottom: 15rem;
   background: radial-gradient(circle, rgba(53, 154, 231, 0.8352941176) 0%, rgba(247, 182, 244, 0.1294117647) 100%);
   border-top: rgba(255, 255, 255, 0.4392156863) 0.1px solid;
   border-radius: 20rem;
+  /*-----Estas son las descripciones de la página de inicio----*/
 }
 .ingreso label {
   width: 90%;
@@ -332,7 +335,7 @@ img {
 /*-----------------diseño de la pagina aviones----------------*/
 /*............................................................*/
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-.tag {
+.tag { /*###Aqui están todas las etiquetas de producto###*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,7 +389,7 @@ img {
   border-radius: 9px;
 }
 
-.det .details {
+.det .details { /*Esto acomoda la última section de la pagina de aviones coimerciales*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,7 +431,7 @@ img {
   width: 50%;
   border-radius: 20px;
 }
-.det .detailsp {
+.det .detailsp { /*esto acomoda lo último de la página de aviones premium*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -475,15 +478,16 @@ img {
   border-radius: 20px;
 }
 
-footer {
+/*Es todo lo que se puede ver en producto principal de la página*/
+footer { /*estilado del footer*/
   background-color: rgba(31, 59, 220, 0.8392156863);
   margin: 1rem 0 0 0;
 }
-footer .foter {
+footer .foter { /*peqeño texto distinquible del footer*/
   color: #000000;
   padding: 2.9rem;
 }
-footer .ultimate {
+footer .ultimate { /*redes de footer*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -508,13 +512,14 @@ footer .ultimate .social a:hover {
   color: #000000;
 }
 
+/*Esto es el pie de página*/
 .error {
   font-family: "Diphylleia", serif;
   text-align: center;
   font-size: 25px;
   margin: 3rem;
 }
-.error a {
+.error a { /*aqui le estoy dando una animacón a mi página de error*/
   background-color: rgba(0, 0, 0, 0);
   display: inline-block;
   text-decoration: none;
@@ -571,7 +576,71 @@ footer .ultimate .social a:hover {
   width: 48%;
 }
 
-@media screen and (max-width: 991px) {
+/*página de error*/
+/*......Versión mobile.........*/
+@media screen and (max-width: 680px) {
+  .port, .portiz {
+    margin: 0.2rem;
+  }
+  .port p, .portiz p {
+    display: none;
+  }
+  .port .port__portada, .portiz .port__portada {
+    grid-template-columns: 100%;
+    grid-template-rows: -webkit-min-content, -webkit-min-content, -webkit-min-content;
+    grid-template-rows: min-content, min-content, min-content;
+    grid-template-areas: "tittle" "img" "button";
+  }
+  .port .port__portada .port-tittle, .portiz .port__portada .port-tittle {
+    margin: 2rem 0;
+  }
+  .port .port__portada .port-button, .portiz .port__portada .port-button {
+    padding: 1rem;
+    margin: 3rem 0;
+  }
+  .port .portiz__portada, .portiz .portiz__portada {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .port .portiz__portada .portiz-picture, .portiz .portiz__portada .portiz-picture {
+    width: 98%;
+  }
+  .port .portiz__portada1, .portiz .portiz__portada1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .port .portiz__portada1 .portiz-picture, .portiz .portiz__portada1 .portiz-picture {
+    width: 98%;
+  }
+  .port .line h4, .portiz .line h4 {
+    font-size: 22px;
+  }
+  .port .play img, .portiz .play img {
+    width: 90%;
+    margin: 5%;
+  }
+  .ingreso {
+    border-radius: 4rem;
+  }
+  .det .details, .det .detailsp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .det .details img, .det .detailsp img {
+    width: 80%;
+  }
+}
+/*-------------Version Tablet----------------*/
+@media screen and (min-width: 681px) and (max-width: 991px) {
   .port p, .portiz p {
     display: none;
   }
@@ -600,42 +669,10 @@ footer .ultimate .social a:hover {
             align-items: center;
   }
 }
-@media screen and (max-width: 650px) {
-  .port .port__portada .port-tittle {
-    margin: 2rem 0;
-  }
-  .port .port__portada .port-button {
-    padding: 1rem;
-    margin: 3rem 0;
-  }
-  .portiz {
-    margin: 0.3rem;
-  }
-  .portiz .portiz__portada {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .portiz .portiz__portada .portiz-picture {
-    width: 98%;
-  }
-  .portiz .portiz__portada1 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .portiz .portiz__portada1 .portiz-picture {
-    width: 98%;
-  }
-  .portiz .play img {
-    margin: 5%;
-  }
-  .ingreso {
-    border-radius: 4rem;
-  }
-  .det .details img, .det .detailsp img {
-    width: 80%;
+@media screen and (min-width: 1350px) {
+  body {
+    width: 1350px;
+    margin: auto;
   }
 }
+/*aquí puse todo mi diseño responsive*/

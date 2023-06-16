@@ -43,7 +43,7 @@
         .port-button{
             grid-area: button;
             box-shadow: 2px 2px 2px 1px #c1222218;
-            background-color: #3dc6db;   /*poner una variable para estos background y hover por que así será mas rapido y facil entyregar mi codigo*/
+            background-color: $colorbutn-ppl;
             border-radius: 20px;
             border: none;
             padding: .6rem;
@@ -89,7 +89,7 @@
             }
             .portiz-button{
                 box-shadow: 2px 2px 2px 1px #00000035;
-                background-color: #3dc6db;   /*poner una variable para estos background y hover por que así será mas rapido y facil entregar mi codigo*/
+                background-color: $colorbutn-ppl;
                 border-radius: 20px;
                 border: none;
                 padding: .6rem;
@@ -133,7 +133,7 @@
             }
             .portiz-button{
                 box-shadow: 2px 2px 2px 1px #00000035;
-                background-color: #3dc6db;   /*poner una variable para estos background y hover por que así será mas rapido y facil entregar mi codigo*/
+                background-color: $colorbutn-ppl;
                 border-radius: 20px;
                 border: none;
                 padding: .6rem;
@@ -183,7 +183,7 @@
         }
         .play__button{
                 box-shadow: 2px 2px 2px 1px #00000035;
-                background-color: #3dc6db;   /*poner una variable para estos background y hover por que así será mas rapido y facil entregar mi codigo*/
+                background-color: $colorbutn-ppl;   /*poner una variable para estos background y hover por que así será mas rapido y facil entregar mi codigo*/
                 border-radius: 20px;
                 border: none;
                 padding: .6rem;

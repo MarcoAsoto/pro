@@ -5,8 +5,7 @@
 /*-----------------diseño de la pagina aviones----------------*/
 /*............................................................*/
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-
-.tag{
+.tag{     /*###Aqui están todas las etiquetas de producto###*/
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -42,7 +41,7 @@
     }
 } 
 .det{
-    .details{
+    .details{ /*Esto acomoda la última section de la pagina de aviones coimerciales*/
         display: flex;
         margin: 2rem;
         justify-content: center;
@@ -71,7 +70,7 @@
             border-radius: 20px;
         }
     }
-    .detailsp{
+    .detailsp{ /*esto acomoda lo último de la página de aviones premium*/
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
